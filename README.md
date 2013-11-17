@@ -4,12 +4,12 @@
 2) Use the following commands to create 'demo_name' user with 'demo_password' password
 
 
-	##On A Mac	
-		*open terminal
-		*psql
-		*CREATE USER demo_user WITH PASSWORD 'demo_password';
-		*CREATE DATABASE data_testing;
-		*CREATE TABLE tablename(field varchar(255),number int);
+	On A Mac	
+		1) open terminal
+		2) psql
+		3) CREATE USER demo_user WITH PASSWORD 'demo_password';
+		4) CREATE DATABASE data_testing;
+		5) CREATE TABLE tablename(field varchar(255),number int);
 	
 	
 	
