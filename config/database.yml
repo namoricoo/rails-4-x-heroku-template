@@ -17,10 +17,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails-4-x-heroku-template_development
+  database: data_testing
   pool: 5
-  username: rails-4-x-heroku-template
-  password:
+  username: demo_user
+  password: demo_password
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
