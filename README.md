@@ -12,6 +12,7 @@ with the community to save other people time.
 	*Wait for the app to be created
 	*Launch postgres93 app
 	*Now run the following commands in the terminal
+		$ bundle update
 		$ psql 
 		$ CREATE DATABASE rails_heroku_db_development;
 		$ CREATE TABLE demo (field VARCHAR(255));
