@@ -1,16 +1,36 @@
-# Rails 4.x heroku ready template
+# Rails 4.x, heroku, and HTML5 template
 
-1) Initial commitpsql
-2) Use the following commands to create 'demo_name' user with 'demo_password' password
+I was looking for a working rails 4.x optimized heroku template. I was unable to find one
+that would allow me to create a demo rails app in under 2 minutes. So, I decided to share this
+with the community to save other people time.
 
 
-	On A Mac	
-		1) open terminal
-		2) psql
-		3) CREATE USER demo_user WITH PASSWORD 'demo_password';
-		4) CREATE DATABASE data_testing;
-		5) CREATE TABLE tablename(field varchar(255),number int);
+### Usage for Mac
+
+`rails new projectname -m https://raw.github.com/namoricoo/rails-4-x-heroku-template'
+
+	*Wait for the app to be created
+	*Launch postgres93 app
+	*Now run the following commands in the terminal
+		$ psql 
+		$ CREATE DATABASE rails_heroku_db_development;
+		$ CREATE TABLE demo (field VARCHAR(255));
+		$ \q
 	
-	
-	
-3) After the sample database is setup follow this tutorial from heroku. [https://devcenter.heroku.com/articles/getting-started-with-rails4]
+	* update initialize github with the following commands in terminal	
+		$ git init
+		$ git add .
+		$ git commit -m "initial commit"
+		$ git status
+		# On branch master nothing to commit, working directory clean
+		
+	* now if your heroku account is already setup, run the following commands	
+		$ 
+
+### Minimum Requirements
+* Postgres93 ( http://postgresapp.com/)
+* Heroku Toolbelt (https://toolbelt.heroku.com/standalone)
+* Local Postgres installation (http://postgresapp.com)
+For more information you can go to the official heroku documentation
+[https://devcenter.heroku.com/articles/getting-started-with-rails4]
+
