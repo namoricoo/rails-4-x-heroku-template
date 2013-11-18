@@ -7,8 +7,11 @@ with the community to save other people time.
 
 ### Usage for Mac
 
-`rails new projectname -m https://raw.github.com/namoricoo/rails-4-x-heroku-template'
+Until we find a way to get this to work from the command line try the following using aptana studio 3.
 
+File > new > rails project > (pick a name for your app) > clone an existing rails project 
+
+	*Put the following for Location: [git@github.com:namoricoo/rails-4-x-heroku-template.git]
 	*Wait for the app to be created
 	*Launch postgres93 app
 	*Now run the following commands in the terminal
@@ -28,6 +31,7 @@ with the community to save other people time.
 	* now if your heroku account is already setup, run the following commands	
 		$ heroku create --stack cedar
 		$ git push heroku master
+		$ heroku open
 		
 	* In your heroku file you can rename it to whatever you want.
 	* Here is a link to the final product
