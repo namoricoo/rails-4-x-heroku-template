@@ -31,7 +31,7 @@ with the community to save other people time.
 		
 	* In your heroku file you can rename it to whatever you want.
 	* Here is a link to the final product
-	[http://rails4-heroku-template.herokuapp.com/]	 
+	(http://rails4-heroku-template.herokuapp.com/)	 
 
 ### Minimum Requirements
 * Postgres93 ( http://postgresapp.com/)
