@@ -14,13 +14,15 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+
+#You will also need to remove the username field in your database.yml if there is one so:
 development:
   adapter: postgresql
   encoding: unicode
-  database: data_testing
+  database: rails_heroku_db_development
   pool: 5
-  username: demo_user
-  password: demo_password
+  password:
+  
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -46,15 +48,14 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: rails-4-x-heroku-template_test
-  pool: 5
-  username: rails-4-x-heroku-template
+  database: rails_heroku_db_test
+  pool: 5  
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rails-4-x-heroku-template_production
+  database: rails_heroku_db_production
   pool: 5
-  username: rails-4-x-heroku-template
   password:
+ 

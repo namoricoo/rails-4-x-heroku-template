@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+ruby "2.0.0"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -26,6 +28,14 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+
+#Heroku integration has previously relied on using the Rails plugin system, which has been removed from Rails 4.
+# To enable features such as static asset serving and logging on Heroku please add rails_12factor gem to your Gemfile.
+#At the end of Gemfile add:
+group :production do
+  gem 'rails_12factor'
+end 
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
