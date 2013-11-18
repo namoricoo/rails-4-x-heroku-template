@@ -26,7 +26,12 @@ with the community to save other people time.
 		# On branch master nothing to commit, working directory clean
 		
 	* now if your heroku account is already setup, run the following commands	
-		$ 
+		$ heroku create --stack cedar
+		$ git push heroku master
+		
+	* In your heroku file you can rename it to whatever you want.
+	* Here is a link to the final product
+	[]	 
 
 ### Minimum Requirements
 * Postgres93 ( http://postgresapp.com/)
